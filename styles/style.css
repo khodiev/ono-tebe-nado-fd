@@ -1,1 +1,70 @@
-/* место для вашего кода */
+.header {
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+    align-items: center;
+
+    padding: 91px 50px;
+}
+
+.header_menu {
+    justify-self: start;
+}
+
+.header_menu_list {
+    display: flex;
+    gap: 32.4px;
+}
+
+.header_menu_list_item {
+    list-style: circle;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    
+}
+
+.header_menu_list_item_individ {
+    list-style: none;
+    text-decoration: none;
+}
+
+.header_menu_list_item_link {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.header_logo_container {
+    display: flex;
+    justify-content: center;
+    width: 137px;
+}
+
+.address {
+    font-family: Raleway, sans-serif;
+    max-width: 47px;
+    font-size: 18px;
+    line-height: 23.9px;
+    font-style: normal;
+    text-underline-offset: 4px;
+}
+
+.header_address {
+    justify-self: center;
+    display: flex;
+    white-space: nowrap;
+}
+
+.cover {
+
+}
+
+.lots {
+
+}
+
+.about {
+
+}
+
+.footer {
+
+}
