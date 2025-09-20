@@ -4,17 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/fonts/fonts.css">
-    <link rel="stylesheet" href="/styles/global.css">
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
   </head>
   <body>
     <header class="header">
       <nav class="header_menu">
         <ul class="header_menu_list">
-          <li class="header_menu_list_item header_menu_list_item_individ">
-            <a href="#0" class="header_menu_list_item_link">главная</a>
+          <li class="header_menu_list_item header__links-list-item_no-bullit">
+            <a href="#0" class="header_menu_list_item_link header_menu_item_link_active">главная</a>
           </li>
           <li class="header_menu_list_item">
             <a href="#0" class="header_menu_list_item_link">посмотреть лоты</a>
@@ -24,10 +24,10 @@
           </li>
         </ul>
       </nav>
-      <a class="header_logo_container">
-        <img src="images/logo-black.svg" alt="logo" class="header_logo_image">
+      <a href="#0" class="header_logo_container">
+        <img src="./images/logo-black.svg" alt="Логотип" class="header_logo_image">
       </a>
-      <address class="address header_address">
+      <address class="address address_header">
         <div>
           <a href="tel:+99995555555">+9 999 555 5555</a><br>
           <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
@@ -38,63 +38,57 @@
     </header>
     <main>
       <section class="cover cover_background_image">
-        <div class="cover_opacity">
-          <h1 class="cover_title">
-            <span class="aligned_text aligned_text-left">оно</span>
-            <span class="aligned_text aligned_text-center">тебе</span>
-            <span class="aligned_text aligned_text-right">надо</span>
-          </h1>
-          <div class="description">
-            <p class="description_title">
-              Аукцион вещей, в которые никто не верил
-            </p>
-            <button class="description_button">
-              <p class="description_button_text">Сделать ставку</p>
-            </button>
-          </div>
+        <div class="overlay"></div>
+        <h1 class="cover_title">
+          <span class="aligned_text aligned_text-left">оно</span>
+          <span class="aligned_text aligned_text-center aligned_text-margin">тебе</span>
+          <span class="aligned_text aligned_text-right aligned_text-margin">надо</span>
+        </h1>
+        <div class="description">
+          <p class="description_title">
+            Аукцион вещей, в которые никто не верил
+          </p>
+          <button class="description_button">
+            <a class="description_button_text">Сделать ставку</a>
+          </button>
         </div>
       </section>
       <section class="lots">
-        <h1 class="lots_title">
+        <h2 class="lots_title">
           лоты
-        </h1>
+        </h2>
         <ul class="lots_card_list">
-          <li class="lots_card_list-item card_type_film">
-            <div class="card-content cover_opacity_lots">
-              <a href="#0" class="card-link">
-                Фильм режиссёра, который бросил киношколу
-              </a>
+          <li class="lots_card_list-item card_type_film card_type_common">
+            <div class="overlay"></div>
+            <a href="#0" class="card-link">
               <article class="card">
-                Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
+                <h3 class="card__title">Фильм режиссёра, который бросил киношколу</h3>
+                <p class="card__text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
               </article>
-            </div>
+            </a>
           </li>
-          <li class="lots_card_list-item card_type_book">
-            <div class="card-content cover_opacity_lots">
-              <a href="#0" class="card-link">
-                Книга, где описан один скучный день из жизни рекламного агента
-              </a>
+          <li class="lots_card_list-item card_type_book card_type_media">
+            <div class="overlay"></div>
+            <a href="#0" class="card-link">
               <article class="card">
-                Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?
+                <h3 class="card__title">Книга, где описан один скучный день из жизни рекламного агента</h3>
+                <p class="card__text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
               </article>
-            </div>
+            </a>
           </li>
-          <li class="lots_card_list-item card_type_picture">
-            <div class="card-content cover_opacity_lots">
-              <a href="#0" class="card-link">
-                Картина, которую повторит даже 5-летний сын маминой подруги
-              </a>
+          <li class="lots_card_list-item card_type_picture card_type_media">
+            <div class="overlay"></div>
+            <a href="#0" class="card-link">
               <article class="card">
-                Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?
+                <h3 class="card__title">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
+                <p class="card__text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
               </article>
-            </div>
+            </a>
           </li>
         </ul>
-        <h2 class="lots__look-more-link-top">
-          <a href="#0" class="lots__look-more-link">
-            посмотреть больше
-          </a>
-        </h2>
+        <a href="#0" class="lots__look-more-link">
+          посмотреть больше
+        </a>
       </section>
       <section class="about">
         <div class="about_logo">
@@ -103,9 +97,6 @@
         <h2 class="about_title">
           Об аукционе
         </h2>
-        <div>
-          <!--Пустой див для пропуска ненужной секции-->
-        </div>
         <div class="about_text">
           <p>
             Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?
@@ -118,7 +109,7 @@
       </section>
     </main>
     <footer class="footer">
-      <address class="address footer_address">
+      <address class="address address_footer">
         <div>
           <a href="tel:+99995555555">+9 999 555 5555</a><br>
           <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
@@ -148,17 +139,17 @@
       <ul class="footer__social-list">
         <li class="footer__social-list-item">
           <a href="#0">
-            <img src="/images/yt.svg" alt="logo youtube" class="footer__social-icon">
+            <img src="./images/yt.svg" alt="logo youtube" class="footer__social-icon">
           </a>
         </li>
         <li class="footer__social-list-item">
           <a href="#0">
-            <img src="/images/vk.svg" alt="logo vkontakte" class="footer__social-icon">
+            <img src="./images/vk.svg" alt="logo vkontakte" class="footer__social-icon">
           </a>
         </li>
         <li class="footer__social-list-item">
           <a href="#0">
-            <img src="/images/pinterest.svg" alt="logo pinterest" class="footer__social-icon">
+            <img src="./images/pinterest.svg" alt="logo pinterest" class="footer__social-icon">
           </a>
         </li>
       </ul>
